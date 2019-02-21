@@ -12,6 +12,6 @@ git add .
 git commit -m "anything"
 git push origin master
 
-###sync
+### sync
 githubの状態と同期する
 git pull
