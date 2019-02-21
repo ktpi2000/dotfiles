@@ -4,7 +4,8 @@
 ### 使い方
 cd $HOME  
 git clone  
-chmod + dotfilesLink.sh  
+cd dotfiles
+chmod +x dotfilesLink.sh  
 ./dotfilesLink.sh  
 
 ### update
