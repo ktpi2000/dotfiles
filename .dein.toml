@@ -29,3 +29,6 @@ repo = 'Shougo/neocomplete'
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'tomasr/molokai'
