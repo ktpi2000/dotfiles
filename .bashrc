@@ -115,3 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+#golang
+export PATH=$PATH:/usr/local/go/bin
