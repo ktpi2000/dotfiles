@@ -109,3 +109,6 @@ endfunction
 
 "ctrl+EでNERDTreeToggle起動
 map <silent><C-e> :NERDTreeToggle<CR>
+
+"カラースキーム
+colorscheme molokai
