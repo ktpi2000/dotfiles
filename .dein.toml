@@ -31,4 +31,4 @@ repo = 'Shougo/neocomplete'
 repo = 'scrooloose/nerdtree'
 
 [[plugins]]
-repo = 'tomasr/molokai'
+repo = 'cohama/lexima.vim'
