@@ -118,3 +118,6 @@ fi
 
 #golang
 export PATH=$PATH:/usr/local/go/bin
+
+#GOPATH
+export PATH=$PATH:$(go env GOPATH)/bin
