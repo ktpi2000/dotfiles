@@ -32,3 +32,6 @@ repo = 'scrooloose/nerdtree'
 
 [[plugins]]
 repo = 'cohama/lexima.vim'
+
+[[plugins]]
+repo = 'fatih/vim-go'
