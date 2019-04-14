@@ -35,3 +35,6 @@ repo = 'cohama/lexima.vim'
 
 [[plugins]]
 repo = 'fatih/vim-go'
+
+[[plugins]]
+repo = 'tomasr/molokai'
