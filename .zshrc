@@ -20,3 +20,22 @@ setopt auto_param_keys
 setopt print_eight_bit
 
 
+# -----------------------------
+# zplug
+# -----------------------------
+
+source ~/.zplug/init.zsh
+
+# zplug-def
+zplug 'zsh-users/zsh-autosuggestions'
+zplug 'zsh-users/zsh-syntax-highlighting'
+
+# 未インストール項目をインストールする
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+zplug load --verbose
