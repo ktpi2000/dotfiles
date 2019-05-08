@@ -29,6 +29,7 @@ source ~/.zplug/init.zsh
 # zplug-def
 zplug 'zsh-users/zsh-autosuggestions'
 zplug 'zsh-users/zsh-syntax-highlighting'
+zplug 'bhilburn/powerlevel9k'
 
 # 未インストール項目をインストールする
 if ! zplug check --verbose; then
