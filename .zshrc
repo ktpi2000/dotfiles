@@ -29,7 +29,7 @@ source ~/.zplug/init.zsh
 # zplug-def
 zplug 'zsh-users/zsh-autosuggestions'
 zplug 'zsh-users/zsh-syntax-highlighting'
-zplug 'bhilburn/powerlevel9k'
+zplug 'bhilburn/powerlevel9k', use:powerlevel9k.zsh-theme
 
 # 未インストール項目をインストールする
 if ! zplug check --verbose; then
@@ -40,3 +40,16 @@ if ! zplug check --verbose; then
 fi
 
 zplug load
+
+# powerlevel9k
+POWERLEVEL9K_MODE='awesome-patched'
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(nvm node_version)
+		  
+POWERLEVEL9K_OS_ICON_BACKGROUND="green"
+POWERLEVEL9K_OS_ICON_FOREGROUND="white"
+POWERLEVEL9K_DIR_HOME_FOREGROUND="white"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
