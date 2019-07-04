@@ -22,8 +22,8 @@ setopt print_eight_bit
 # -----------------------------
 # export
 # -----------------------------
-
-
+export GOPATH=$HOME/go
+export PATH=$PATH:/usr/local/go/bin
 
 # -----------------------------
 # zplug
