@@ -1,11 +1,7 @@
-# Created by newuser for 5.4.2
-
 # -----------------------------
 # Lang
 # -----------------------------
 export LANG=ja_JP.UTF-8
-export LESSCHARSET=utf-8
-
 
 # -----------------------------
 # General
@@ -26,27 +22,19 @@ export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin
 
 # -----------------------------
-# zplug
+# Zplugin
 # -----------------------------
+source "$HOME/.zplugin/bin/zplugin.zsh"
+autoload -Uz _zplugin
+(( ${+_comps}  )) && _comps[zplugin]=_zplugin
+zplugin load 'zsh-users/zsh-autosuggestions'
+zplugin load 'zsh-users/zsh-syntax-highlighting'
+zplugin ice from"gh"
+zplugin load 'bhilburn/powerlevel9k'
 
-source ~/.zplug/init.zsh
-
-# zplug-def
-zplug 'zsh-users/zsh-autosuggestions'
-zplug 'zsh-users/zsh-syntax-highlighting'
-zplug 'bhilburn/powerlevel9k', use:powerlevel9k.zsh-theme
-
-# 未インストール項目をインストールする
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
-fi
-
-zplug load
-
+# -----------------------------
 # powerlevel9k
+# -----------------------------
 POWERLEVEL9K_MODE='awesome-patched'
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
