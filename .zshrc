@@ -16,6 +16,15 @@ setopt auto_param_keys
 setopt print_eight_bit
 
 # -----------------------------
+# ls alias
+# -----------------------------
+alias ls='ls --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias lla='ll -A'
+alias l='ls -CF'
+
+# -----------------------------
 # export
 # -----------------------------
 export GOPATH=$HOME/go
