@@ -110,3 +110,8 @@ endfunction
 "ctrl+EでNERDTreeToggle起動
 map <silent><C-e> :NERDTreeToggle<CR>
 
+"矢印キー無効
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
