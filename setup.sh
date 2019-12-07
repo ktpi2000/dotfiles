@@ -47,6 +47,9 @@ else
 fi
 
 #Zplugins update
+printf 'Zplugins install\n'
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
+
 printf 'Zplugins update\n'
 zplugin update --all
 
