@@ -40,7 +40,7 @@ printf 'ZSH\n'
 if [ $SHELL == /bin/zsh ]; then
 	printf 'already zsh\n'
 else
-	print 'change login shell\n'
+	printf 'change login shell\n'
 	chsh -s /bin/zsh
 	printf 'sucessfully changed!'
 fi
