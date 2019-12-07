@@ -36,8 +36,13 @@ endif
 
 "###表示の設定###
 
-"行番号を表示
+"行番号
 set number
+autocmd ColorScheme * highlight LineNr ctermfg=250
+
+"カラースキーム
+set background=dark
+colorscheme hybrid
 
 "編集中のファイル名を表示
 set title
