@@ -37,12 +37,11 @@ done
 
 #change login shell
 printf 'ZSH\n'
-if [ $SHELL == $(which zsh) ]; then
+if [ $SHELL == /bin/zsh ]; then
 	printf 'already zsh\n'
 else
 	print 'change login shell\n'
-	grep "$(which zsh)" /etc/shells &>/dev/null || sudo sh -c "echo $(which zsh) >> /etc/shells"
-	chsh -s $(which zsh)
+	chsh -s /bin/zsh
 	printf 'sucessfully changed!'
 fi
 
@@ -50,9 +49,4 @@ fi
 printf 'Zplugins install\n'
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
 
-printf 'Zplugins update\n'
-zplugin update --all
-
-source ~/.zshrc
-
-printf 'done!'
+zsh
