@@ -42,6 +42,7 @@ if [ $SHELL == /bin/zsh ]; then
 else
 	printf 'change login shell\n'
 	chsh -s /bin/zsh
+	printf 'enter password\n'
 	printf 'sucessfully changed!'
 fi
 
@@ -50,3 +51,7 @@ printf 'Zplugins install\n'
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
 
 zsh
+
+#shell reboot
+printf 'shell reboot\n'
+exec $SHELL -l

@@ -1,5 +1,5 @@
 # dotfiles
-設定ファイルの管理
+設定ファイルの管理 
 個人用
 
 ### ファイルの移動  
@@ -8,6 +8,10 @@ mv [追加するもの] dotfiles
 ↓
 link.shに追加
 
+### 初期setup
+```
+bash -c "`curl -fsSL https://raw.githubusercontent.com/ktpi2000/dotfiles/master/setup.sh `"
+```
 
 ### 使い方
 cd $HOME  
@@ -24,9 +28,11 @@ git commit -m "anything"
 git push origin master  
 
 ### sync
-githubの状態と同期する  
+remoteの状態と同期する  
 git pull 
 
 ### memo
 dein.vimのアップデート 
 :call dein#update()
+
+
