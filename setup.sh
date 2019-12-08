@@ -7,20 +7,20 @@ echo '###  DOTFIELS  ####'
 echo '###################'
 
 #download dotfiles
-printf 'download dotfiles\n'
+printf '\n\033[33mdownload dotfiles\033[m\n'
 if [ -d $DOTFILES_PATH ]; then
-	printf 'dotfiles: already exists\n'
+	printf '\n\033[33mdotfiles: already exists\033[m\n'
 else
-	printf 'downloading dotfiles ...\n'
+	printf '\n\033[33mdownload dotfiles ...\033[m\n'
 	git clone https://github.com/ktpi2000/dotfiles.git
-	printf 'successfully downloaded!\n'
+	printf '\n\033[33msuccessfully downloaded!\033[m\n'
 fi
 
 #symbolic link
 . $DOTFILES_PATH/link.sh
 
 #apt install
-printf 'sudo apt update\n'
+printf '\n\033[33msudo apt update\033[m\n'
 sudo apt update
 
 packagelist=(
@@ -29,29 +29,28 @@ packagelist=(
 	zsh
 	tmux
 )
-printf 'start apt install ...\n'
+printf '\n\033[33mstart apt install ...\033[m\n'
 for list in ${packagelist[@]}; do
-	printf ${list}
+	echo ''
+	echo $list
 	sudo apt install -y ${list}
 done
 
 #change login shell
-printf 'ZSH\n'
+printf '\n\033[33mZSH\033[m\n'
 if [ $SHELL == /bin/zsh ]; then
-	printf 'already zsh\n'
+	printf '\n\033[33malready zsh\033[m\n'
 else
-	printf 'change login shell\n'
+	printf '\n\033[33mchange login shell\033[m\n'
 	chsh -s /bin/zsh
-	printf 'enter password\n'
-	printf 'sucessfully changed!'
+	printf '\n\033[33menter password\033[m\n'
+	printf '\n\033[33msucessfully changed!\033[m\n'
 fi
 
 #Zplugins update
-printf 'Zplugins install\n'
+printf '\n\033[33mZplugins install\033[m\n'
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
 
-zsh
-
 #shell reboot
-printf 'shell reboot\n'
+printf '\n\033[33mshell reboot\033[m\n'
 exec $SHELL -l
