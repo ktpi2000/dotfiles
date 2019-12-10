@@ -94,6 +94,7 @@ alias ls='ls --color -F'
 # -----------------------------
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:~/development/flutter/bin
 
 # -----------------------------
 # Zplugin
