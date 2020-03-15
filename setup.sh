@@ -48,8 +48,8 @@ else
 fi
 
 #Zplugins update
-printf '\n\033[33mZplugins install\033[m\n'
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
+printf '\n\033[33mZinit install\033[m\n'
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 
 #shell reboot
 printf '\n\033[33mshell reboot\033[m\n'
