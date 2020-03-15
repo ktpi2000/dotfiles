@@ -97,14 +97,14 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:~/development/flutter/bin
 
 # -----------------------------
-# Zplugin
+# Zinit
 # -----------------------------
-source "$HOME/.zplugin/bin/zplugin.zsh"
-autoload -Uz _zplugin
-(( ${+_comps}  )) && _comps[zplugin]=_zplugin
-zplugin light 'zsh-users/zsh-autosuggestions'
-zplugin light 'zsh-users/zsh-syntax-highlighting'
-zplugin ice from"gh"
+source "$HOME/.zinit/bin/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps}  )) && _comps[zinit]=_zinit
+zinit light 'zsh-users/zsh-autosuggestions'
+zinit light 'zsh-users/zsh-syntax-highlighting'
+zinit ice from"gh"
 
 # -----------------------------
 # configuration
