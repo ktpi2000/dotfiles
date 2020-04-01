@@ -35,6 +35,3 @@ repo = 'cohama/lexima.vim'
 
 [[plugins]]
 repo = 'fatih/vim-go'
-
-[[plugins]]
-repo = 'w0ng/vim-hybrid'
