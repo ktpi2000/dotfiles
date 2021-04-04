@@ -34,7 +34,7 @@ fi
 # dotfilesがあるか確認
 cd ~/dotfiles
 if [ $? -ne 0 ]; then
-    die "dotfiles not found!!!"
+    echo "dotfiles not found!!!"
 fi
 
 # zinitのインストール
