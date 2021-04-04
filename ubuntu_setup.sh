@@ -3,6 +3,11 @@
 # エラー or 未定義変数があったら停止
 set -eu
 
+# コマンドがあるか
+function has() {
+    return `type $1 > /dev/null 2>&1`
+}
+
 # update
 yes | sudo apt update
 yes | sudo apt upgrade
