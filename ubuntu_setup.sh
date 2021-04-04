@@ -23,6 +23,8 @@ if [ ! -d $DOTFILES_PATH ]; then
         wget https://github.com/ktpi2000/dotfiles/archive/master.tar.gz
         tar -zxvf master.tar.gz
         mv -f dotfiles-master ~/dotfiles
+    fi
+fi
 
 # dotfilesがあるか確認
 cd ~/dotfiles
