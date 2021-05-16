@@ -48,7 +48,7 @@ precmd() { vcs_info }
 setopt prompt_subst
 
 PROMPT='
-%F{118}[%n]%f%~ ${vcs_info_msg_0_}
+%F{118}(*╹ヮ╹*)%f%~ ${vcs_info_msg_0_}
 > '
 
 ### Added by Zinit's installer
@@ -76,3 +76,8 @@ zinit light zsh-users/zsh-autosuggestions
 
 # 環境変数
 export PATH="$PATH:$HOME/flutter/bin"
+export PATH="$PATH:$HOME/flutter/bin"
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+setopt +o nomatch
