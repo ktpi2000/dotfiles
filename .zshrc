@@ -79,5 +79,6 @@ export PATH="$PATH:$HOME/flutter/bin"
 export PATH="$PATH:$HOME/flutter/bin"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+eval "$(anyenv init -)"
 
 setopt +o nomatch
