@@ -27,6 +27,9 @@ alias ls="ls -G"
 alias ll="ls -lG"
 alias la="ls -laG"
 
+# alias
+alias yarndel="rm -rf $HOME/.anyenv/envs/nodenv/shims/yarn"
+
 # history
 export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=10000
