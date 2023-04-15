@@ -62,3 +62,6 @@ export SAVEHIST=30000
 setopt hist_ignore_all_dups
 setopt EXTENDED_HISTORY
 setopt share_history
+
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-autosuggestions
