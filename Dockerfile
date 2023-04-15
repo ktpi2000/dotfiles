@@ -8,6 +8,7 @@ RUN apt update \
     curl \
     git \
     vim \
+    tmux \
     zsh
 
 COPY .zshrc /root
