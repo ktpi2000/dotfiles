@@ -13,4 +13,5 @@ RUN apt update \
 
 COPY .zshrc /root
 
-RUN bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+ENV SHELL /usr/bin/zsh
+RUN zsh
